@@ -3,6 +3,9 @@
 A Python utility for injecting user-defined serial numbers into Intel HEX firmware files.
 The tool first verifies the a placeholder marker (0xAA55) at a known location (0x4000)
 
+## Notes
+- Although it was mentioned that the placeholder existed at the address 0x2000, it was found in the original file at 0x4000, so that address is the default location to be searched
+
 ## Features
 
 - Accepts Intel HEX files
