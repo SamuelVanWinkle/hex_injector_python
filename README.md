@@ -26,9 +26,25 @@ The tool first verifies the a placeholder marker (0xAA55) at a known location (0
 
 --output (REQUIRED) : The output path (Ex: --output output.hex)
 
-## Sample input
+## Sample input and output
 
 python -m injector.main --input input.hex --address 0x4000 --serial A1B2C3D4 --output output.hex
+
+Available space found: 11 bytes (22 hex characters)
+Serial bytes to be injected: A1B2C3D4
+Proceed with this serial? [y/N]: y
+Parsed serial bytes: b'\xa1\xb2\xc3\xd4'
+Planned changes (address : old -> new):
+ 0x4000 : 0x55 -> 0xd4
+ 0x4001 : 0xaa -> 0xc3
+ 0x4002 : 0x0 -> 0xb2
+ 0x4003 : 0x0 -> 0xa1
+Successfully injected the serial number into the file.
+Changes:
+ 0x4000 : 0xd4
+ 0x4001 : 0xc3
+ 0x4002 : 0xb2
+ 0x4003 : 0xa1
 
 ## Dependencies
 
