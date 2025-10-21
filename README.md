@@ -26,6 +26,10 @@ The tool first verifies the a placeholder marker (0xAA55) at a known location (0
 
 --output (REQUIRED) : The output path (Ex: --output output.hex)
 
+## Sample output
+
+python -m injector.main --input input.hex --address 0x4000 --serial A1B2C3D4 --output output.hex
+
 ## Dependencies
 
 - [`intelhex`](https://pypi.org/project/IntelHex/)
