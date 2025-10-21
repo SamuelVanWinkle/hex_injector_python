@@ -14,9 +14,13 @@ The tool first verifies the a placeholder marker (0xAA55) at a known location (0
 ## Commands
 
 --serial (REQUIRED) : The serial number in hex format (Ex: --serial A1B2C3D4)
+
 --input (REQUIRED) : The input hex file (Ex: --input CrystalFontz_04.production.hex)
+
 --address : The address of the placeholder marker. 0x4000 by default
+
 --padding_bytes : Determines the padding bytes that are used. 0x00 by default
+
 --output (REQUIRED) : The output path (Ex: --output output.hex)
 
 ## Dependencies
